@@ -5,7 +5,7 @@ void	rush(int x, int y)
 	char	arr[x][y];
 	int	i;
 	int	j;
-
+	
 	i = 0;
 	j = 0;
 	while (j < y)
