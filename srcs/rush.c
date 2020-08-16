@@ -2,10 +2,10 @@
 
 void	rush(int x, int y)
 {
-	char	arr[x][y];
+	char	arr[x + 1][y + 1];
 	int	i;
 	int	j;
-	
+
 	i = 0;
 	j = 0;
 	while (j < y)

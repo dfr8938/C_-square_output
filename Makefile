@@ -1,23 +1,27 @@
-SRCS		= main.c ft_putchar.c rush.c
-OBJS		= ${SRCS:.c=.o}
+HEADER		= ./includes/
+PATH_SRCS	= ./srcs/
+SRCS		= ${PATH_SRCS}ft_putchar.c ${PATH_SRCS}rush.c
 NAME		= rush
 CC		= gcc
-RM		= rm -f
+RM		= rm -rf
+AR		= ar rc
 CFLAGS		= -Wall -Wextra -Werror
 
-.c.o:
-		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+lib.a: $(SRCS)
+		${CC} -g -c $(SRCS) -I $(HEADER)
+		${AR} lib.a *.o
+		${RM} *.o
 
-${NAME}:	${OBJS}
-		${CC} ${CFLAGS} ${SRCS} -o ${NAME}
+${NAME}:	main.c lib.a
+		${CC} ${CFLAGS} ${SRCS} -o ${NAME} main.c lib.a -I ${HEADER}
 
 all:		${NAME}
 
 clean:
-		${RM} ${OBJS}
+		${RM} *.o
 
 fclean:		clean
-		${RM} ${NAME}
+		${RM} ${NAME} lib.a
 
 re:		fclean all
 

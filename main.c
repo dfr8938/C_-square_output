@@ -5,8 +5,8 @@ int	main(void)
 	int x;
 	int y;
 
-	x = -1156;
-	y = -120;
+	x = 1150;
+	y = 50;
 
 	if (x < 0 && y < 0)
 	{
