@@ -1,7 +1,7 @@
-void rush(int x, int y);
+#include "ft_h.h"
 
-int		main(void)
+int	main(void)
 {
-	rush(4, 4);
+	rush(56, 20);
 	return (0);
 }

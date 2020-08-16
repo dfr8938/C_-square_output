@@ -1,6 +1,4 @@
-#include <unistd.h>
-
-void ft_putchar(char n);
+#include "ft_h.h"
 
 void	rush(int x, int y)
 {
@@ -9,7 +7,7 @@ void	rush(int x, int y)
 	int j;
 
 	i = 0;
-	j = 0;	
+	j = 0;
 	while (j < y)
 	{
 		while (i < x)
@@ -31,10 +29,4 @@ void	rush(int x, int y)
 		i = 0;
 		j++;
 	}
-}
-
-int main()
-{
-	rush(20, 20);
-	return 0;
 }
