@@ -2,9 +2,9 @@
 
 void	rush(int x, int y)
 {
-	char arr[x][y];
-	int i;
-	int j;
+	char	arr[x][y];
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -25,7 +25,7 @@ void	rush(int x, int y)
 		}
 		if (i == x - 1 && i == 0)
 			ft_putchar(arr[x][y]);
-			write(1, "\n", 1);
+		write(1, "\n", 1);
 		i = 0;
 		j++;
 	}
