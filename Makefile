@@ -1,7 +1,7 @@
 HEADER		= ./includes/
 PATH_SRCS	= ./srcs/
-SRCS		= ${PATH_SRCS}ft_abs.c ${PATH_SRCS}ft_putchar.c ${PATH_SRCS}rush.c
-NAME		= rush
+SRCS		= ${PATH_SRCS}ft_abs.c ${PATH_SRCS}ft_putchar.c ${PATH_SRCS}rectangle.c
+NAME		= rectangle
 CC		= gcc
 RM		= rm -rf
 AR		= ar rc
